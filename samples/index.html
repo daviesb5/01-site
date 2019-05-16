@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Sample Websites</title>
+	<link rel="stylesheet" href="../css/main-style.css">
+	<link rel="stylesheet" href="../css/sample-style.css">
+</head>
+
+<body>
+	<div class="header-layout" id="header">
+		<div class="header-overlay"></div>
+		<div class="header-vid">
+			<video autoplay muted loop id="header-vid">
+				<source src="../vid/khet-loop-2.MP4" type="video/mp4">
+			</video>
+		</div>
+
+		<div class="header-text">
+			<h1>
+				Sample Websites
+			</h1>
+			<h2>
+				Check out these samples that illustrate my programming
+			</h2>
+		</div>
+	</div>
+
+	<div class="section-layout">
+		<div class="section-text">
+			<h3>
+				To see a site, simply click on the image:
+			</h3>
+		</div>
+		<div class="grid-layout">
+			<div class="sample-cell">
+				<a href="housing/index.html">
+					<img class="flex-img-cell white-bg" src="housing/img/fs/site-logo.png" alt="Zimmermann Housing"
+						id="housing" onclick="checkImg(this.id);">
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer-layout">
+		<div class="grid-layout">
+			<div class="social-media-cell">
+				<a class="logo-link" href="https://www.facebook.com/BraedonDaviesProfile/?modal=admin_todo_tour"
+					target="_blank">
+					<img class="flex-img-cell dark-bg" src="../img/media-icons/fb-(char).png" alt="Facebook">
+				</a>
+			</div>
+			<div class="music-cell">
+				<a class="logo-link" href="https://www.linkedin.com/in/braedon-davies-a7859162/" target="_blank">
+					<img class="flex-img-cell dark-bg" src="../img/media-icons/in-(char).png" alt="LinkedIn">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer-text">
+		<p>
+			&copy BraedonDavies.com
+			<script>document.write(new Date().getFullYear())</script>
+		</p>
+	</div>
+</body>
+
+</html>
