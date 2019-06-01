@@ -1,0 +1,249 @@
+/*
+GENERAL
+*/
+:root {
+    --bg-image: url('https://upload.wikimedia.org/wikipedia/commons/b/be/Chalkboard_at_school.jpg');
+    --bg-color: rgba(0, 0, 0, 0.5);
+    --menu-speed: 0.75s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4;
+}
+
+.reg-header {
+    background-color: var(--bg-color);
+    color: #fff;
+    height: 40vh;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 5rem;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 3rem;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.reg-header:before {
+    content:'';
+    background: var(--bg-image) no-repeat top center/cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.reg-header .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.showcase-inner h1 {
+    font-size: 4rem;
+}
+
+.showcase-inner p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--btn-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 3rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/*
+Header: Cover Video
+*/
+.vid-header {
+    background-color: var(--bg-color);
+    color: #fff;
+    height: 40vh;
+    position: relative;
+    margin-top: 0px;
+    padding-top: 5rem;
+}
+
+.vid-header:before {
+    content:'';
+    background: var(--bg-image) no-repeat top center/cover;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/*
+Logo design
+*/
+.logo {
+    max-width: 300px;
+    padding: 2rem;
+}
+
+/*
+Music Grid
+*/
+.section-layout > div .grid-layout {
+    max-width: 1000px;
+    margin: 10px auto 0 auto;
+    background-color: var(--main-color);
+    padding: 10px 0;
+    margin-top: -25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.section-layout > div .grid-layout .music-cell {
+    width: 200px;
+    height: 200px;
+    line-height: 100px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 10px auto 10px auto;
+}
+
+.section-layout > div .grid-layout .music-cell .flex-img-cell {
+    display: flex;
+}
+
+.section-layout > div .grid-layout .music-cell .white-bg {
+    background-color: #fff;
+}
+
+.section-layout > div .grid-layout .music-cell .black-bg {
+    background-color: #000;
+}
+
+.section-layout > div .grid-layout .music-cell .neutral-bg {
+    background-color: #c7c7c7;
+}
+
+/*
+MOBILE - less than 950 px
+*/
+@media (max-width: 950px){
+    .logo {
+        max-width: 225px;
+    }
+    .showcase-inner h1 {
+        font-size: 3.25rem;
+    }
+    .showcase-inner p {
+        font-size: 1.35rem;
+    }
+
+    .reg-header {
+        height: 30vh;
+    }
+
+    /*
+    Music Grid
+    */
+    .section-layout > div .grid-layout {
+        max-width: 750px;
+        margin: 10px auto 0 auto;
+        background-color: var(--main-color);
+        padding: 10px 0;
+        margin-top: -25px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+    }
+
+    .section-layout > div .grid-layout .music-cell {
+        width: 150px;
+        height: 150px;
+        line-height: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 150px;
+        height: 150px;
+        display: flex;
+    }
+}
+
+/*
+MOBILE - less than 700 px
+*/
+@media (max-width: 700px){
+    .logo {
+        max-width: 150px;
+    }
+    .showcase-inner h1 {
+        font-size: 2.75rem;
+    }
+    .showcase-inner p {
+        font-size: 1.2rem;
+    }
+
+    .reg-header {
+        height: 20vh;
+    }
+
+    /*
+    Music Grid
+    */
+    .section-layout > div .grid-layout {
+        max-width: 450px;
+        margin: 0 auto 0 auto;
+        background-color: var(--main-color);
+        padding: 10px 0;
+        margin-top: -20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .section-layout > div .grid-layout .music-cell {
+        width: 125px;
+        height: 125px;
+        line-height: 100px;
+        text-align: center;
+        padding: 5px 0;
+        margin: 10px auto 10px auto;
+    }
+
+    .section-layout > div .grid-layout .music-cell .flex-img-cell {
+        width: 125px;
+        height: 125px;
+        display: flex;
+    }
+}
