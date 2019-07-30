@@ -1,14 +1,18 @@
 /*
-GENERAL
+============================
+GEN SETTINGS
+============================
 */
+
+/* COVER PHOTO */
 :root {
     /* Menus */
     --menu-color: rgba(255, 255, 255, 0.8);
     --menu-color-sub: rgba(208, 208, 208, 1.0);
     --ham-menu-bg: rgba(22, 22, 22, 1.0);
     /* Cover Photo */
-    --cover-shade: rgba(31, 31, 31, 0.65);
-    --bg-color: rgba(0, 0, 0, 0.4);
+    --cover-shade: rgba(0, 0, 0, 0.4);
+    --bg-color: rgba(31, 31, 31, 0.65);
     /* 1st Div */
     --div-1-bg: rgba(255, 255, 255, 1.0);
     --div-1-color: rgba(13, 55, 13, 1.0);
@@ -29,17 +33,11 @@ body {
     padding-bottom: 0px;
 }
 
-/*
-============================
-GEN SETTINGS
-============================
-*/
-
-/*
-COVER PHOTO
-*/
+/* COVER PHOTO */
 .i-header {
+    width: 100%;
     display: flex;
+    margin: 40px auto 40px auto;
     align-items: center;
     color: #fff;
 }
@@ -52,6 +50,7 @@ COVER PHOTO
     top: 0;
     left: 0;
     width: 100%;
+    margin: auto;
 }
 .fullscreen-image-wrap img {
     min-width: 100%;
@@ -62,7 +61,7 @@ COVER PHOTO
     position: absolute;
     top: 0;
     left: 0;
-    background: var(--bg-color);
+    background: var(--cover-shade);
     z-index: 3;
 }
 .header-content {
@@ -77,6 +76,13 @@ COVER PHOTO
 .header-content p {
     display: block;
 }
+
+/* LAYOUTS */
+.layout {
+    margin: 40px auto 0 auto;
+    background-color: var(--div-1-bg);
+}
+
 /*
 ============================
 DESKTOP
