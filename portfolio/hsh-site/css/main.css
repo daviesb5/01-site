@@ -41,11 +41,6 @@ GEN SETTINGS
 .layout-div:nth-child(1) > div .layout-content {
     color: var(--div-1-color);
 }
-/*
-============================
-DESKTOP
-============================
-*/
 .btn {
     display: inline-block;
     border: none;
@@ -89,8 +84,6 @@ COVER IMAGES – SRC
     min-height: 40vh;
 }
 .header-overlay {
-    height: 40vh;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -113,7 +106,38 @@ COVER IMAGES – SRC
     display: block;
     padding-bottom: 2rem;
 }
-
+/*
+============================
+DESKTOP
+============================
+*/
+@media (min-width: 950px){
+    .header-overlay {
+        height: 40vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: var(--bg-color);
+        z-index: 1;
+    }
+    .header-content {
+        z-index: 5;
+        padding: 0 3rem;
+        margin: auto;
+        text-align: center;
+    }
+    .header-content h1 {
+        font-family: 'Raleway Black', 'Raleway', 'Helvetica', sans-serif;;
+        font-size: 4rem;
+        margin-bottom: 0;
+    }
+    .header-content p {
+        font-size: 1.3rem;
+        display: block;
+        padding-bottom: 2rem;
+    }
+}
 
 /*
 ============================
