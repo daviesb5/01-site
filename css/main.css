@@ -39,12 +39,77 @@ h1, h2, h3 {
 /*
 SECTIONS
 */
-.section-layout {
-    
-}
 
 /* Section 1 */
 .sec-1-layout {
     color: var(--sec-1-content);
     background-color: var(--sec-1-contrast);
+}
+
+/*
+======================
+RESPONSIVE FEATURES
+======================
+*/
+
+/*
+MOBILE - less than 720 px
+*/
+@media (max-width: 720px){
+    /*
+    Sections
+    */
+    .sec-1-layout {
+        max-width: 600px;
+    }
+    .sec-1-layout > div {
+        max-width: 600px;
+    }
+    .sec-1-layout > div .sec-content {
+        max-width: 600px;
+        margin: 2rem;
+    }
+}
+
+/*
+MOBILE - less than 600 px
+*/
+@media (max-width: 600px){
+    h1 {
+        font-size: 2.65rem;
+    }
+    h2 {
+        font-size: 1.6rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+    body p {
+        font-size: 1.0rem;
+        padding: 0.24rem;
+    }
+    /*
+    Sections
+    */
+    .sec-1-layout {
+        max-width: 540px;
+    }
+    .sec-1-layout > div {
+        max-width: 540px;
+        margin: 0.12rem;
+        padding: 0.12rem;
+    }
+    .sec-1-layout > div .sec-content {
+        max-width: 500px;
+        margin: 0.24rem;
+    }
+    .sec-1-layout > div .sec-content .act-btn {
+        display: inline-block;
+        border: none;
+        background-color: var(--sec-1-content);
+        color: var(--sec-1-contrast);
+        padding: 0.72rem 1.2rem;
+        margin-top: 3.6rem;
+        text-decoration: none;
+    }
 }
