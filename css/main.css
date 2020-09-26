@@ -9,13 +9,13 @@ GENERAL
     --gen-bg-color: #ffffff;
     /*section 1*/
     --sec-1-content: #00334E;
-    --sec-1-contrast: #fff;
-    /*section 2*/
-    --sec-2-content: #4A4A4A;
-    --sec-2-contrast: #fff;
+    --sec-1-bg: #fff;
     /*section 2*/
     --sec-2-content: #fff;
-    --sec-2-contrast: #00334E;
+    --sec-2-bg: #4A4A4A;
+    /*section 2*/
+    --sec-3-content: #fff;
+    --sec-3-bg: #00334E;
     /*footer*/
     --footer-content: #fff;
     --footer-bg: #9B9B9B;
@@ -39,11 +39,43 @@ h1, h2, h3 {
 /*
 SECTIONS
 */
-
+.call-outs-container {
+    max-width: 1400px;
+    margin: 40px auto 0 auto;
+}
+.call-out {
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    flex-basis: 50%;
+}
 /* Section 1 */
 .sec-1-layout {
     color: var(--sec-1-content);
-    background-color: var(--sec-1-contrast);
+    background-color: var(--sec-1-bg);
+}
+.sec-1-layout .call-out > div .sec-content .act-btn {
+    background-color: var(--sec-1-content);
+    color: var(--sec-1-bg);
+}
+.sec-1-layout .call-out > div .sec-content .ghost-btn {
+    border-color: var(--sec-1-content);
+    background-color: var(--sec-1-bg);
+    color: var(--sec-1-content);
+}
+/* Section 2 */
+.sec-2-layout {
+    color: var(--sec-2-content);
+    background-color: var(--sec-2-bg);
+}
+.sec-2-layout .call-out > div .sec-content .act-btn {
+    background-color: var(--sec-2-content);
+    color: var(--sec-2-bg);
+}
+.sec-2-layout .call-out > div .sec-content .ghost-btn {
+    border-color: var(--sec-2-content);
+    background-color: var(--sec-2-bg);
+    color: var(--sec-2-content);
 }
 
 /*
@@ -59,7 +91,7 @@ MOBILE - less than 720 px
     /*
     Sections
     */
-    .sec-1-layout {
+    /* .sec-1-layout {
         max-width: 600px;
     }
     .sec-1-layout > div {
@@ -68,13 +100,13 @@ MOBILE - less than 720 px
     .sec-1-layout > div .sec-content {
         max-width: 600px;
         margin: 2rem;
-    }
+    } */
 }
 
 /*
 MOBILE - less than 600 px
 */
-@media (max-width: 600px){
+@media (max-width: 640px){
     h1 {
         font-size: 2.65rem;
     }
@@ -91,25 +123,61 @@ MOBILE - less than 600 px
     /*
     Sections
     */
-    .sec-1-layout {
-        max-width: 540px;
-    }
-    .sec-1-layout > div {
-        max-width: 540px;
-        margin: 0.12rem;
-        padding: 0.12rem;
-    }
-    .sec-1-layout > div .sec-content {
+    .call-outs-container {
         max-width: 500px;
-        margin: 0.24rem;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
     }
-    .sec-1-layout > div .sec-content .act-btn {
-        display: inline-block;
-        border: none;
-        background-color: var(--sec-1-content);
-        color: var(--sec-1-contrast);
-        padding: 0.72rem 1.2rem;
-        margin-top: 3.6rem;
+    .call-outs-container .call-out {
+        max-width: 500px;
+        flex: 1;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    /* .section-layout {
+        max-width: 600px;
+        padding: 0.84rem 2.4rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-layout .call-out > div .sec-content p {
+        line-height: 1.8rem;
+    }
+    .section-layout .call-out > div .sec-content .both-btn {
         text-decoration: none;
+        display: inline-block;
+        border-radius: 36px;
+        padding: 0.84rem 1.8rem;
+        margin-top: 1.2rem;
+        min-width: 8rem;      
+        font-size: 1.2rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
+    .section-layout .call-out > div .sec-content .act-btn {
+        border: none;
+    }
+    .section-layout .call-out > div .sec-content .ghost-btn {
+        border-style: solid;
+    } */
+
+    /* .section-img {
+        padding: 0;
+        margin-bottom: 0;
+    }
+    .section-img > div {
+        padding: 0;
+        margin: 0;
+    }
+    .section-img > div .img-div {
+        padding: 0;
+        margin: 0;
+    }
+    .section-img > div .img-div .img-file {
+        padding: 0;
+        margin: 0;
+    } */
 }
