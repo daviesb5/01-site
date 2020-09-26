@@ -1,54 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <!--
+	<meta charset="UTF-8">
+	<!--
 	Traversy Media
 	-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open_Sans&display=swap" rel="stylesheet">
-    <!--
+	<!--
 	Other items
     -->
-    <script type="text/javascript" src="js/page-layout.js"></script>
+	<script type="text/javascript" src="js/page-layout.js"></script>
 	<link rel="stylesheet" href="css/main.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to BraedonDavies.com</title>
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Welcome to BraedonDavies.com</title>
 </head>
-<body>
-    <dev class="hero-img site-logo">
-        <dev class="logo">
-            <div class="logo-div">
-                <img class="logo" src="img/logos/mobile/solid_white_1.png" alt="Menu Logo" id="svg-logo"><br>
-            </div>
-        </dev>
-    </dev>
 
-    <!--Hamburger Menu-->
-    <div class="ham-wrap">
-        <input type="checkbox" class="toggler">
-        <div class="hamburger">
-            <div></div>
-        </div>
-        
-        <div class="menu">
-            <div>
-                <div>
-                    <ul>
-                        <li>
+<body>
+	<dev class="hero-img site-logo">
+		<dev class="logo">
+			<div class="logo-div">
+				<img class="logo" src="img/logos/mobile/solid_white_1.png" alt="Menu Logo" id="logo-img">
+			</div>
+		</dev>
+	</dev>
+
+	<!--Hamburger Menu-->
+	<div class="ham-wrap">
+		<input type="checkbox" class="toggler">
+		<div class="hamburger">
+			<div></div>
+		</div>
+
+		<div class="menu">
+			<div>
+				<div>
+					<ul>
+						<li>
 							<!--
 								Hamburger Menu resets if user hits "Home"
 							-->
 							<a href="#home-ref" class="nav-btn" id="home-btn" onclick="hamMenu();">
 								Home
 							</a>
-                        </li>
-                        <li>
-                            Portfolio Pages
-                        </li>
+						</li>
+						<li>
+							Portfolio Pages
+						</li>
 						<li>
 							<a href="about.html" class="nav-btn" id="about-btn">
 								Main Portfolio
@@ -69,13 +73,13 @@
 								Credits
 							</a>
 						</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
 
-    <!--Navigation Wrap Menu
+	<!--Navigation Wrap Menu
     <div class="nav-wrap">
         <div class="nav-menu">
 			<div class="nav-btn">
@@ -115,27 +119,32 @@
 			</div>
 		</div>
     </div>-->
-    
-    <!--Header Section-->
-    <header class="showcase-layout">
-		<div class="container showcase-inner">
-			<h1>
-				Welcome to BraedonDavies.com!
-			</h1>
-			<p>
-				Thanks for checking out my Portfolio
-			</p>
-            <a href="#home-ref" class="btn">Continue</a>
-            <img src="img/bg-photos/mobile/slc-bg.jpg" alt="SLC Background">
+
+	<!--Header Section-->
+	<header class="i-header header-container">
+		<div class="fullscreen-image-wrap">
+			<img src="img/bg-photos/mobile/slc-bg.jpg" alt="SLC Background">
 		</div>
-    </header>
-    
-    <!--Continue Segment-->
-    <!-- <section id="home-ref" class="section-layout anchor-edit">
+		<div class="header-overlay"></div>
+		<div class="header-content">
+			<div class="header-text">
+				<h1>
+					Welcome to BraedonDavies.com!
+				</h1>
+				<p>
+					Thanks for checking out my Portfolio
+				</p>
+			</div>
+			<a href="#home-ref" class="btn">Continue</a>
+		</div>
+	</header>
+
+	<!--Continue Segment-->
+	<!-- <section id="home-ref" class="section-layout anchor-edit">
 	</section> -->
-	
-	<!--Section 1-->
-    <div class="sec-1-layout section-layout call-outs-container">
+
+
+	<!-- <div class="sec-1-layout section-layout call-outs-container">
         <div class="call-out">
             <div class="sec-content">
                 <h2>
@@ -156,10 +165,9 @@
 				</div>
 			</div>
 		</div>
-	</div>
-	
-	<!--Section 2-->
-    <div class="sec-2-layout section-layout call-outs-container">
+	</div> -->
+
+	<!-- <div class="sec-2-layout section-layout call-outs-container">
         <div class="call-out">
             <div class="sec-content">
                 <h2>
@@ -179,8 +187,62 @@
 				</div>
 			</div>
 		</div>
+	</div> -->
+
+	<!--Section 1-->
+	<div class="call-outs-container">
+		<div class="call-out">
+			<div class="call-out-sec section-1-layout">
+				<div class="sec-1 section-content">
+					<h2>
+						View My Projects
+					</h2>
+					<p>
+						Check out my prototypes for various app & website ideas. I’m constantly adding new ideas, so
+						it’s a work in progress.
+					</p>
+					<a href="#home-ref" class="act-btn both-btn">Portfolio</a>
+					<a href="#home-ref" class="ghost-btn both-btn">Personal</a>
+				</div>
+			</div>
+			<div class="call-out-sec">
+				<div class="sec-1 section-img">
+					<div class="screen-true"></div>
+					<div class="img-div">
+						<img src="img/bg-photos/mobile/app_vue.png" alt="app_vue code" class="img-file">
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	
+
+	<!--Section 2-->
+	<div class="call-outs-container">
+		<div class="call-out">
+			<div class="call-out-sec section-2-layout">
+				<div class="sec-2 sec-content">
+					<h2>
+						Get to Know Me
+					</h2>
+					<p>
+						So, I managed to hold your attention for longer than 10 seconds? As a thank you, here’s a some
+						brief info about me.
+					</p>
+					<a href="#home-ref" class="act-btn both-btn">About Me</a>
+				</div>
+			</div>
+			<div class="call-out-sec">
+				<div class="sec-2 section-img">
+					<div class="screen-false"></div>
+					<div class="img-div">
+						<img src="img/bg-photos/mobile/bd-fb-1.jpg" alt="couple" class="img-file">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
 	<!--Footer-->
 	<footer class="footer-layout">
 		<div class="footer-div">
@@ -213,7 +275,8 @@
 					<div class="container-child">
 						<div class="section-text">
 							<p>
-								&copy BraedonDavies.com 2019-<script>document.write(new Date().getFullYear())</script>
+								&copy BraedonDavies.com 2019-
+								<script>document.write(new Date().getFullYear())</script>
 							</p>
 						</div>
 					</div>
@@ -221,6 +284,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 </body>
+
 </html>

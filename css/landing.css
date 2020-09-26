@@ -1,0 +1,39 @@
+/*
+GENERAL
+*/
+:root {
+    --menu-speed: 0.75x;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.4rem;
+}
+
+.header-container {
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+/*
+======================
+SWITCHES BETWEEN MENUS
+======================
+*/
+/*
+MOBILE - less than 600 px
+*/
+@media (max-width: 640px){
+    .showcase-inner h1 {
+        font-size: 2.4rem;
+    }
+    .showcase-inner p {
+        font-size: 1.2rem;
+    }
+}
