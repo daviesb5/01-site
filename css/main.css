@@ -20,6 +20,11 @@ GENERAL
     /*footer*/
     --footer-content: #fff;
     --footer-bg: #9B9B9B;
+    /*
+    MEASUREMENTS
+    */
+    --header-landing: 40vh;
+    --header-landing-percent: 40%;
 }
 
 html, body {
@@ -64,12 +69,21 @@ SHOWCASE HEADER
     z-index: 1;
 } */
 .i-header {
-    height: 40vh;
+    height: var(--header-landing-percent);
     display: flex;
     align-items: center;
     color: var(--light-color);
 }
+.i-header .showcase-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
 .header-container {
+    /* height: var(--header-landing-percent); */
     padding: 0 3rem;
     margin: auto;
     text-align: center;
@@ -80,16 +94,16 @@ SHOWCASE HEADER
     top: 0;
     left: 0;
     width: 100%;
-    height: 40%;
+    /* height: var(--header-landing); */
     overflow: hidden;
     /* z-index: 1; */
 }
 .fullscreen-image-wrap img {
     min-width: 100%;
-    min-height: 40vh;
+    min-height: var(--header-landing);
 }
 .header-overlay {
-    height: 40%;
+    height: var(--header-landing-percent);
     width: 100vw;
     position: absolute;
     top: 0;
@@ -99,7 +113,7 @@ SHOWCASE HEADER
     /* z-index: 1; */
 }
 .header-content {
-    height: 40%;
+    max-height: var(--header-landing);
     z-index: 25;
     padding: auto;
     margin: auto;
@@ -131,7 +145,7 @@ SECTIONS
     flex-basis: 50%;
 }
 /* Section 1 */
-.call-outs-container .call-out .section-1-layout {
+.call-outs-container .call-out .section-2-layout {
     color: var(--sec-1-content);
     background-color: var(--sec-1-bg);
 }
@@ -199,71 +213,57 @@ MOBILE - less than 600 px
     }
     body p {
         font-size: 1.0rem;
-        /* padding: 0.24rem; */
+    }
+    .both-btn {
+        font-size: 1.0rem;
+    }
+    /*
+    Showcase Header
+    */
+    .i-header {
+        height: 20vh;
+    }
+    .i-header:before {
+        content:'';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .i-header .container {
+        justify-content: space-between;
+    }
+    .i-header .showcase-inner {
+        height: 20vh;
+    }
+    .fullscreen-image-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-width: 700px;
+        height: var(--header-landing-percent);
+        overflow: hidden;
+    }
+    .fullscreen-image-wrap img {
+        min-height: var(--header-landing);
     }
     /*
     Sections
     */
     .call-outs-container {
-        max-width: 100%;
-        /* margin: 40px auto 0 auto; */
-    }
-    .call-out {
-        max-width: 100%;
-        box-sizing: border-box;
-        /* margin-bottom: 0px; */
-        flex-basis: 100%;
-    }
-    .call-out-sec {
-        max-width: 100%;
-        flex: 1;
-    }
-    .call-out-sec .section-img > .img-div .img-file {
-        max-width: 100%;
-    }
-
-    /* .section-layout {
         max-width: 600px;
-        padding: 0.84rem 2.4rem;
-        display: flex;
-        justify-content: space-between;
+        background-color: var(--light-color);
     }
-    .section-layout .call-out > div .sec-content p {
-        line-height: 1.8rem;
+    .section-layout .call-out {
+        max-width: 550px;
+        padding: 15px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
     }
-    .section-layout .call-out > div .sec-content .both-btn {
-        text-decoration: none;
-        display: inline-block;
-        border-radius: 36px;
-        padding: 0.84rem 1.8rem;
-        margin-top: 1.2rem;
-        min-width: 8rem;      
-        font-size: 1.2rem;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
+    .section-layout .call-out .call-out-sec {
+        padding-top: 4.5px;
+        padding-bottom: 8px;
     }
-    .section-layout .call-out > div .sec-content .act-btn {
-        border: none;
-    }
-    .section-layout .call-out > div .sec-content .ghost-btn {
-        border-style: solid;
-    } */
-
-    /* .section-img {
-        padding: 0;
-        margin-bottom: 0;
-    }
-    .section-img > div {
-        padding: 0;
-        margin: 0;
-    }
-    .section-img > div .img-div {
-        padding: 0;
-        margin: 0;
-    }
-    .section-img > div .img-div .img-file {
-        padding: 0;
-        margin: 0;
-    } */
 }
