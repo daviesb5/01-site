@@ -206,9 +206,47 @@ SECTIONS
 .section-2-layout p {
     color: var(--sec-2-content);
 }
+/*
+Footer
+*/
 .footer-layout {
     background-color: var(--footer-bg);
     color: var(--footer-content);
+    /* max-width: 100%;
+    min-width: 100%; */
+}
+.footer-layout .footer-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footer-layout .footer-div .flex-div {
+    margin: 0 auto;
+    display: flex;
+}
+.footer-layout .footer-div .flex-div .container {
+    
+}
+.footer-layout .footer-div .flex-div .container .container-child {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.footer-layout .footer-div .flex-div .container .container-child .footer-interior {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn {
+
+}
+.footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn > div {
+
+}
+.footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn > div .media-img {
+
 }
 /*
 ======================
@@ -294,11 +332,7 @@ MOBILE - less than 600 px
         height: 40%;
     }
     .interior-content {
-        padding: 2.0rem;
-    }
-    .footer-interior {
-        padding-top: 2.4rem;
-        padding-bottom: 6.0rem;
+        padding: 2.0rem 0.6rem;
     }
     /*
     Sections
@@ -342,10 +376,11 @@ MOBILE - less than 600 px
         
     }
     .footer-layout .footer-div .flex-div .container {
-        
+        padding-top: 2.4rem;
+        padding-bottom: 6.0rem;
     }
     .footer-layout .footer-div .flex-div .container .container-child {
-        
+        padding: 0.36rem;
     }
     .footer-layout .footer-div .flex-div .container .container-child .footer-interior {
         
@@ -357,6 +392,6 @@ MOBILE - less than 600 px
         
     }
     .footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn > div .media-img {
-        
+        max-height: 1.8rem;
     }
 }

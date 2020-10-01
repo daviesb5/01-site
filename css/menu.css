@@ -4,10 +4,11 @@ NAVIGATION MENU
 ======================
 */
 
-.nav-wrap {
-    position: fixed;
-    z-index: 20;
-    max-width: 100%;
+.nav-tools-container {
+    position: relative;
+}
+.nav-tools-container .nav-tools {
+    position: relative;
 }
 
 /*
@@ -15,7 +16,6 @@ NAVIGATION MENU
 HERO IMAGE / LOGO
 ======================
 */
-
 /*
 GENERAL
 */
@@ -45,11 +45,15 @@ HAMBURGER MENU
 GENERAL
 */
 .ham-wrap {
-    visibility: hidden;
-    /* position: fixed;
+    /* visibility: hidden; */
+    position: relative;
     top: 0;
     right: 0;
-    z-index: 25; */
+    z-index: 25;
+}
+.ham-wrap .menu {
+    visibility: hidden;
+    position: relative;
 }
 
 /*
@@ -76,5 +80,12 @@ MOBILE - less than 600 px
     }
     .hero-img .logo .logo-div .logo-img {
         
+    } */
+    .ham-wrap {
+        top: 1.2rem;
+        right: 1.2rem;
+    }
+    /* .ham-wrap .logo {
+        max-width: 2.4rem;
     } */
 }
