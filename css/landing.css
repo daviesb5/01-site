@@ -16,9 +16,9 @@ body {
 }
 
 .header-container {
-    margin: auto;
+    /* margin: auto; */
     overflow: hidden;
-    padding: 0 3rem;
+    /* padding: 0 3rem; */
 }
 
 /*

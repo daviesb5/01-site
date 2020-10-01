@@ -10,7 +10,7 @@ GENERAL
     --dark-screen: #272727;
     /*section 1*/
     --sec-1-content: #00334E;
-    --sec-1-bg: #fff;
+    --sec-1-bg: #F8F8F8;
     /*section 2*/
     --sec-2-content: #fff;
     --sec-2-bg: #4A4A4A;
@@ -31,13 +31,15 @@ html, body {
     padding: 0;
     margin: 0;
 }
-
 body {
-    background-color: var(--gen-bg-color);
+    background-color: #f00;
     font-family: 'Open Sans', 'Raleway', Helvetica, sans-serif;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
-
+div {
+    padding: 0;
+    margin: 0;
+}
 h1, h2, h3 {
     font-family: 'Cabin', 'Raleway', Helvetica, sans-serif;
 }
@@ -50,8 +52,8 @@ h1, h2, h3 {
     min-width: 8rem;      
     font-size: 1.2rem;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 /*
@@ -76,8 +78,8 @@ SHOWCASE HEADER
 }
 .container {
     max-width: 1000px;
-    padding: 0 3rem;
-    margin: auto;
+    /* padding: 0 3rem; */
+    /* margin: auto; */
     text-align: center;
     overflow: hidden;
 }
@@ -91,8 +93,8 @@ SHOWCASE HEADER
 }
 .header-container {
     /* height: var(--header-landing-percent); */
-    padding: 0 3rem;
-    margin: auto;
+    /* padding: 0 3rem; */
+    /* margin: auto; */
     text-align: center;
     overflow: hidden;
 }
@@ -122,14 +124,14 @@ SHOWCASE HEADER
 .header-content {
     max-height: var(--header-landing);
     z-index: 25;
-    padding: auto;
+    /* padding: auto; */
     margin: auto;
     text-align: center;
 }
 .header-text {
     line-height: 3.6rem;
-    padding: auto;
-    margin: auto;
+    /* padding: auto; */
+    /* margin: auto; */
     text-align: center;
 }
 .header-content .act-btn {
@@ -141,13 +143,22 @@ SHOWCASE HEADER
 SECTIONS
 */
 .call-outs-container {
-    margin: 40px auto 0 auto;
+    /* margin: 40px auto 0 auto; */
     background-color: var(--light-color);
+    /* temporary solution */
+    margin-top: -0.36rem;
+    margin-bottom: -0.36rem;
 }
 .call-out {
     /* padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px; */
+    padding: 0px;
+    margin: 0px;
+}
+.call-out:before, .call-out::after{
+    /* padding: 10rem; */
+    margin: 0;
 }
 .call-out-sec {
     /* padding: 20px;
@@ -155,9 +166,9 @@ SECTIONS
     margin-bottom: 20px; */
 }
 .section-content {
-    padding: 20px;
+    /* padding: 20px; */
     box-sizing: border-box;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 /* Section 1 */
 .call-outs-container .call-out .section-1-layout {
@@ -194,7 +205,10 @@ SECTIONS
 .section-2-layout p {
     color: var(--sec-2-content);
 }
-
+.footer-layout {
+    background-color: var(--footer-bg);
+    color: var(--footer-content);
+}
 /*
 ======================
 RESPONSIVE FEATURES
@@ -247,33 +261,36 @@ MOBILE - less than 600 px
     Showcase Header
     */
     .i-header {
-        height: 25vh;
+        height: 40vh;
+        max-width: 100%;
     }
     .i-header:before {
-        content:'';
+        /* content:'';
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 100%; */
     }
     .i-header .container {
-        justify-content: space-between;
+        /* justify-content: space-between; */
     }
     .i-header .showcase-inner {
-        height: 100%;
+        /* height: 100%; */
     }
     .fullscreen-image-wrap {
         position: absolute;
         top: 0;
         left: 0;
-        min-width: 100vw;
+        max-width: 100%;
         height: var(--header-landing-percent);
         overflow: hidden;
+        margin: 0;
     }
     .fullscreen-image-wrap img {
         /* min-height: 40vh; */
-        min-width: 100vw;
+        max-width: 100%;
+        margin: 0;
     }
     /*
     Sections
@@ -287,25 +304,19 @@ MOBILE - less than 600 px
         top: 0; */
     }
     .call-out {
-        margin: 0px auto;
-        padding: 0;
+        /* margin: 0px auto; */
+        /* padding: 0; */
     }
     .call-out .call-out-sec {
-        margin: 0px auto;
-        padding: 0;
+        /* margin: 0px auto; */
+        /* padding: 0; */
     }
     .sec-content {
-        margin: 0.8rem;
-        padding: 0.8rem;
+        /* margin: 0.8rem; */
+        /* padding: 0.8rem; */
     }
-    /* .section-layout .call-out {
-        max-width: 550px;
-        padding: 15px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
+    .footer-layout {
+        /* margin: 40px auto; */
+        /* padding: 160px auto; */
     }
-    .section-layout .call-out .call-out-sec {
-        padding-top: 4.5px;
-        padding-bottom: 8px;
-    } */
 }
