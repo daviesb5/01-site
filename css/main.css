@@ -48,7 +48,7 @@ h1, h2, h3 {
     display: inline-block;
     border-radius: 36px;
     padding: 0.84rem 1.8rem;
-    margin: 1.2rem;
+    margin: 1.2rem 0;
     min-width: 8rem;      
     font-size: 1.2rem;
     text-align: center;
@@ -253,7 +253,7 @@ MOBILE - less than 600 px
     }
     body p {
         font-size: 1.0rem;
-        line-height: 1.8rem;
+        line-height: 2.4rem;
     }
     .both-btn {
         font-size: 1.0rem;
@@ -293,6 +293,13 @@ MOBILE - less than 600 px
         max-width: 100%;
         height: 40%;
     }
+    .interior-content {
+        padding: 2.0rem;
+    }
+    .footer-interior {
+        padding-top: 2.4rem;
+        padding-bottom: 6.0rem;
+    }
     /*
     Sections
     */
@@ -310,7 +317,7 @@ MOBILE - less than 600 px
     }
     .call-out .call-out-sec {
         /* margin: 0px auto; */
-        /* padding: 0; */
+        /* padding: 0.012rem 0; */
     }
     .call-out .call-out-sec .section-img .img-div {
         max-width: 100%;
@@ -319,11 +326,37 @@ MOBILE - less than 600 px
         max-width: 100%;
     }
     .sec-content {
-        /* margin: 0.8rem; */
+        margin: 0px 1.2rem 0px 1.2rem;
         /* padding: 0.8rem; */
     }
+    /*
+    Footer
+    */
     .footer-layout {
-        /* margin: 40px auto; */
-        /* padding: 160px auto; */
+
+    }
+    .footer-layout .footer-div {
+        
+    }
+    .footer-layout .footer-div .flex-div {
+        
+    }
+    .footer-layout .footer-div .flex-div .container {
+        
+    }
+    .footer-layout .footer-div .flex-div .container .container-child {
+        
+    }
+    .footer-layout .footer-div .flex-div .container .container-child .footer-interior {
+        
+    }
+    .footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn {
+        
+    }
+    .footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn > div {
+        
+    }
+    .footer-layout .footer-div .flex-div .container .container-child .footer-interior .media-btn > div .media-img {
+        
     }
 }
