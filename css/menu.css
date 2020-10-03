@@ -1,4 +1,11 @@
 /*
+GENERAL
+*/
+:root {
+    --nav-pos: 1.2rem;
+}
+
+/*
 ======================
 NAVIGATION MENU
 ======================
@@ -7,48 +14,53 @@ NAVIGATION MENU
 GENERAL
 */
 .nav-tools-container {
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; */
-    margin: 0;
-    padding: 0;
-    /* visibility: hidden; */
     position: fixed;
-    z-index: 25;
+    z-index: 24;
 }
 .nav-tools-container .nav-tools {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     display: flex;
 }
 .nav-tools-container .nav-tools .nav-div {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+    width: 100%;
+    min-width: 84vw;
+    padding: 0.6rem;
+    margin: auto;
+    /* margin: 1.2rem; */
 }
-
+.nav-bg {
+    position: fixed;
+    background-color: var(--sec-1-content);
+    opacity: 96%;
+    z-index: 6;
+    min-height: 5.4vh;
+    width: 100%;
+    min-width: 84vw;
+}
 /*
 HERO IMG
 */
-.hero-img {
-    top: 0rem;
-    z-index: 25;
+.nav-tools-container .nav-tools .hero-img .logo {
+    float: left;
+    top: var(--nav-pos);
+    left: var(--nav-pos);
 }
-.hero-img .logo {
-    top: 0.72rem;
+.hero-img .toggler {
+    /* top: 0.72rem; */
 }
 
 /*
 HAMBURGER MENU
 */
-.ham-wrap {
-    top: 0;
-    right: 0;
+.nav-tools-container .nav-tools .ham-menu {
+    float: right;
+    /* top: var(--nav-pos);
+    right: var(--nav-pos);
     z-index: 25;
-    visibility: hidden;
+    visibility: hidden; */
 }
-.ham-wrap .menu {
-    visibility: hidden;
+.ham-menu .menu {
+    /* visibility: hidden; */
 }
 
 /*
@@ -60,6 +72,24 @@ SWITCHES BETWEEN MENUS
 MOBILE - less than 600 px
 */
 @media (max-width: 640px){
+    .nav-tools-container {
+        max-width: 100%;
+    }
+    .nav-tools-container .nav-tools .nav-div {
+        width: 100%;
+        min-width: 86vw;
+    }
+    .nav-tools-container .nav-tools .nav-div {
+        padding: 1.2rem 1.2rem;
+    }
+    .nav-bg {
+        min-height: 5.4rem;
+        width: 100%;
+        min-width: 84vw;
+    }
+    /*
+    HERO IMG
+    */
     .hero-img {
         top: 1.2rem;
     }
@@ -75,10 +105,13 @@ MOBILE - less than 600 px
     .hero-img .logo .logo-div .logo-img {
         
     }
-    .ham-wrap {
+    /*
+    HAMBURGER MENU
+    */
+    .ham-menu {
         top: 1.2rem;
     }
-    .ham-wrap .logo {
-        max-width: 2.4rem;
+    .ham-menu .checkbox {
+        /* min-width: 2.4rem; */
     }
 }
