@@ -3,6 +3,8 @@ GENERAL
 */
 :root {
     --nav-pos: 1.2rem;
+    --nav-height-item: 2.4rem;
+    --nav-height: 5.4rem;
 }
 
 /*
@@ -22,9 +24,9 @@ GENERAL
 }
 .nav-tools-container .nav-tools .nav-div {
     width: 100%;
-    min-width: 84vw;
-    padding: 0.8rem;
-    margin: auto;
+    min-width: 100vw;
+    /* padding: 0.8rem; */
+    /* margin: auto; */
     opacity: 72%;
 }
 .nav-bg {
@@ -37,26 +39,47 @@ GENERAL
     min-width: 84vw;
 }
 /*
+NAV ITEMS
+*/
+.nav-tools-container .nav-tools .nav-div {
+    min-width: 48.5vw;
+    max-width: 49.5%;
+    max-height: var(--nav-height);
+}
+.nav-tools-container .nav-tools .nav-div .nav-item {
+    align-items: center;
+    justify-content: center;
+}
+/*
 HERO IMG
 */
+.nav-tools-container .nav-tools .hero-img {
+    /* background-color: indigo; */
+    padding: 0.6rem;
+}
 .nav-tools-container .nav-tools .hero-img .logo {
     float: left;
-    top: var(--nav-pos);
-    left: var(--nav-pos);
+    height: var(--nav-height-item);
 }
 /*
 HAMBURGER MENU
 */
-.nav-tools-container .nav-tools .ham-menu {
-    float: right;
-}
 .ham-menu .toggler {
     cursor: pointer;
-    width: 60px;
-    height: 60px;
-    opacity: 0;
+    float: right;
+    /* opacity: 0; */
 }
-.ham-menu .toggler .hamburger {
+.nav-tools-container .nav-tools .ham-menu {
+    /* background-color: yellowgreen; */
+    padding: 0.6rem;
+}
+.nav-tools-container .nav-tools .ham-menu .hamburger {
+    background-color: lightblue;
+    float: right;
+    height: var(--nav-height-item);
+    width: var(--nav-height-item);
+}
+/* .ham-menu .toggler .hamburger {
     padding: 1rem;
     display: flex;
     align-items: center;
@@ -81,7 +104,7 @@ HAMBURGER MENU
     align-items: center;
     justify-content: center;
     transition: all 0.4s ease;
-}
+} */
 /* Moves line down */
 .ham-menu .hamburger > div:after {
     top: 10px;
@@ -110,7 +133,7 @@ SWITCHES BETWEEN MENUS
 MOBILE - less than 600 px
 */
 @media (max-width: 640px){
-    .nav-tools-container {
+    /* .nav-tools-container {
         max-width: 100%;
     }
     .nav-tools-container .nav-tools .nav-div {
@@ -124,12 +147,12 @@ MOBILE - less than 600 px
         min-height: 5.4rem;
         width: 100%;
         min-width: 84vw;
-    }
+    } */
     /*
     HERO IMG
     */
-    .hero-img {
-        top: 1.2rem;
+    /* .hero-img {
+        
     }
     .hero-img .logo {
         max-width: 2.4rem;
@@ -142,24 +165,22 @@ MOBILE - less than 600 px
     }
     .hero-img .logo .logo-div .logo-img {
         
-    }
+    } */
     /*
     HAMBURGER MENU
     */
-    .ham-menu {
-        padding: 0.6rem;
+    /* .ham-menu {
+        padding: 0.2rem;
     }
     .ham-menu .toggler {
-        /* top: 1.2rem;
-        right: 1.2rem; */
         cursor: pointer;
         width: 2.4rem;
         height: 2.4rem;
-    }
+    } */
     /*
     HAMBURGER MENU
     */
-    .ham-menu .toggler .hamburger {
+    /* .ham-menu .toggler .hamburger {
         padding: 1.2rem;
         display: flex;
         align-items: center;
@@ -184,23 +205,5 @@ MOBILE - less than 600 px
         align-items: center;
         justify-content: center;
         transition: all 0.4s ease;
-    }
-    /* Moves line down */
-    .ham-menu .hamburger > div:after {
-        top: 10px;
-    }
-    /* Toggler animate */
-    .ham-menu .toggler:checked + .hamburger > div {
-        transform: rotate(135deg);
-    }
-    /* Turn lines into X */
-    .ham-menu .toggler:checked + .hamburger > div:before,
-    .ham-menu .toggler:checked + .hamburger > div:after {
-        top: 0;
-        transform: rotate(90deg);
-    }
-    /* Rotate on hover when checked */
-    .ham-menu .toggler:checked + .hamburger > div:hover {
-        transform: rotate(225deg);
-    }
+    } */ 
 }
