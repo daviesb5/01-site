@@ -64,9 +64,19 @@ HERO IMG
 /*
 HAMBURGER MENU
 */
+
+/* 
+
+NOTE: In your previous website, there's an aboslute position for both the toggler (checkbox) and the hamburger menu.
+In order to super-impose the ham menu over the checkbox, you may need to use the same technique.
+
+*/
+
 .ham-menu .toggler {
     cursor: pointer;
     float: right;
+    width: var(--nav-height-item);
+    height: var(--nav-height-item);
     /* opacity: 0; */
 }
 .nav-tools-container .nav-tools .ham-menu {
