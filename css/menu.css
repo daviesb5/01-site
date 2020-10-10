@@ -172,37 +172,37 @@ HAMBURGER MENU
 /*
 Show menu
 */
-.ham-menu .toggler:checked ~ .menu {
+.ham-menu .toggler:checked ~ #menu {
     visibility: visible;
 }
 
-.ham-menu .toggler:checked ~ .menu > div {
+.ham-menu .toggler:checked ~ #menu > div {
     transform: scale(1);
-    transition-duration: var(--menu-speed);
+    /* transition-duration: var(--menu-speed); */
 }
 
-.ham-menu .toggler:checked ~ .menu > div > div {
+.ham-menu .toggler:checked ~ #menu > div > div {
     opacity: 1;
-    transition: opacity 0.4s ease;
+    /* transition: opacity 0.4s ease; */
 }
 
-.ham-menu .menu {
+.ham-menu #menu {
     position: fixed;
-    top: 0;
+    top: 4.4rem;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 24.0rem;
     visibility: hidden;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: center;
 }
 
-.ham-menu .menu > div {
-    background: var(--dark-screen);
-    /* width: 200vw;
-    height: 200vw; */
+.ham-menu #menu > div {
+    background: var(--sec-1-content);
+    width: 100%;
+    height: 200vw;
     /* display: flex;
     flex: none;
     align-items: center;
@@ -211,7 +211,7 @@ Show menu
     transition: all 0.8s ease;
 }
 
-.ham-menu .menu > div > div {
+.ham-menu #menu > div > div {
     text-align: center;
     max-width: 90vw;
     max-height: 100vh;
@@ -219,14 +219,14 @@ Show menu
     transition: opacity(100%) 0.s ease;
 }
 
-.ham-menu .menu > div > div > ul > li {
+.ham-menu #menu > div > div > ul > li {
     list-style: none;
     color: #fff;
     font-size: 1.5rem;
     padding: 1rem;
 }
 
-.ham-menu .menu > div > div > ul > li > a {
+.ham-menu #menu > div > div > ul > li > a {
     color: inherit;
     text-decoration: none;
     transition: color 0.4 ease;
