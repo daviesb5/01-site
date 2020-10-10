@@ -4,8 +4,9 @@ GENERAL
 :root {
     --nav-pos: 0.8rem;
     --nav-height-item: 3.2rem;
-    --nav-height: 5.4rem;
+    --nav-height: 100px;
     --menu-speed: 0.75s;
+    --nav-gradient: linear-gradient(225deg, var(--featured-color), #000);
 }
 
 /*
@@ -26,9 +27,9 @@ GENERAL
 .nav-tools-container .nav-tools .nav-div {
     width: 100%;
     min-width: 100vw;
-    /* padding: 0.8rem; */
+    padding: 0.8rem;
     /* margin: auto; */
-    opacity: 72%;
+    /* opacity: 72%; */
 }
 .nav-bg {
     position: fixed;
@@ -64,7 +65,7 @@ HERO IMG
     height: var(--nav-height-item);
 }
 /*
-HAMBURGER MENU
+HAMBURGER MENU | BARS
 */
 .ham-menu {
     position: fixed;
@@ -165,12 +166,13 @@ HAMBURGER MENU
     transform: rotate(-60deg);
 }
 /* Rotate on hover when checked */
-/* .ham-menu .toggler:checked + .hamburger:hover {
-    transform: rotate(25deg);
-} */
+.ham-menu .toggler:checked + .hamburger:hover {
+    transform: rotate(225deg);
+    transition-duration: var(--menu-speed);
+}
 
 /*
-Show menu
+HAMBURGER MENU | NAV MENU
 */
 .ham-menu .toggler:checked ~ #menu {
     visibility: visible;
@@ -188,19 +190,44 @@ Show menu
 
 .ham-menu #menu {
     position: fixed;
-    top: 4.4rem;
-    left: 0;
+    top: 0;
+    right: 0;
     width: 100%;
-    height: 24.0rem;
+    height: 72vh;
     visibility: hidden;
     overflow: hidden;
     display: flex;
     align-items: top;
     justify-content: center;
+    /* background-color: var(--sec-1-content); */
+    background-image: var(--nav-gradient);
+    opacity: 100%;
+}
+
+.ham-menu #menu #menu-options {
+    position: relative;
+    padding: 2.4rem 1.8rem;
+    margin: 0.6rem;
+    text-align: left;
+    top: var(--nav-height);
+}
+
+#menu-options ul {
+    line-height: 2.4rem;
+}
+
+.sub-options {
+    padding-left: 1.2rem;
+    margin-left: 1.2rem;
+    line-height: 1.8rem;
+}
+
+.sub-options a {
+    font-size: 1.0rem;
 }
 
 .ham-menu #menu > div {
-    background: var(--sec-1-content);
+    /* background: var(--sec-1-content); */
     width: 100%;
     height: 200vw;
     /* display: flex;
